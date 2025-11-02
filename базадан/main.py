@@ -98,7 +98,7 @@ def callback_project(message, data, statuses):
         cansel(message)
         return
     if status not in statuses:
-        bot.send_message(message.chat.id, "Ты выбрал статус не из списка, попробуй еще раз!)", reply_markup=gen_markup(statuses))
+        bot.send_message(message.chat.id, "🚫 Ты выбрал статус не из списка, попробуй еще раз!)", reply_markup=gen_markup(statuses))
         bot.register_next_step_handler(message, callback_project, data=data, statuses=statuses)
         return
     status_id = manager.get_status_id(status)
@@ -264,3 +264,4 @@ def text_handler(message):
 if __name__ == '__main__':
     manager = DB_Manager(DATABASE)
     bot.infinity_polling()
+
