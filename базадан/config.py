@@ -1,2 +1,3 @@
-TOKEN = '8460003313:AAGCIgH7L3ER7r9oClu5tbPJSkSGwfGMqtE'
+TOKEN = '      '
+
 DATABASE = 'tablo.db'
